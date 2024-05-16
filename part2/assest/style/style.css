@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section1 , .section2 , .section3 , .section4 , .section5 , .section6{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+.section1{
+    background-color: rgb(196, 161, 98);}
+.section1 button ,.section2 button ,.section3 button, .section4 button , .section5 button ,.section6 button{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.section1 input , .section2 input , .section3 input , .section4 input , .section5 input , .section6 input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    
+}
+.section2{
+    background-color: rgb(238, 194, 113);
+}
+.section3{
+    background-color:  rgb(236, 186, 93);
+}
+.section4{
+    background-color:  rgb(236, 182, 80);
+}
+.section5{
+    background-color:  rgb(214, 155, 45);
+}
+.section5 .results{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    gap: 30px;
+}
+.section6{
+    background-color:  rgb(197, 140, 34);
+}
+@media (min-width:768px) and (max-width:991px){
+    .section5 .in input , .section6 .in input {
+        width: 30px;
+    }
+    .section5 .results {
+        padding-left: 30px;
+    }
+}
+@media (min-width:567px) and (max-width:767px){
+    .section5 .in input , .section6 .in input {
+        width: 30px;
+    }
+    .section5 .results input , .section1 input{
+        width: 60px;
+    }
+}
+@media (min-width:320px) and (max-width:566px){
+    .section5 .in input , .section6  input ,.section1 input {
+        width: 20px;
+    }
+    .section5 .results input {
+        width: 70px;
+    } 
+    .section6 button , .section5 button{
+        width: 80px;
+    }
+    .section5 .results {
+        padding-left: 10px;
+    }
+    .section6 .in  {
+        padding-left: 20px; 
+    }
+}
+
+
+
